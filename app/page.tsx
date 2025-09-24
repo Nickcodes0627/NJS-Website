@@ -1,102 +1,125 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white font-serif relative overflow-hidden">
+      {/* Background Accents */}
+      <div className="absolute inset-0 opacity-40">
+        <div className="w-[700px] h-[700px] bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 rounded-full blur-3xl absolute -top-60 -left-40 animate-pulse"></div>
+        <div className="w-[600px] h-[600px] bg-gradient-to-t from-gray-900 via-gray-800 to-gray-700 rounded-full blur-3xl absolute bottom-0 right-0 animate-bounce"></div>
+        <div className="w-[400px] h-[400px] bg-gradient-to-b from-gray-700 to-gray-900 rounded-full blur-2xl absolute top-1/2 left-1/3 animate-pulse"></div>
+        <div className="w-[300px] h-[300px] bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800 rounded-full blur-2xl absolute top-1/3 right-1/4 animate-ping"></div>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+      {/* Header / Logo */}
+      <header className="flex flex-col items-center justify-center py-12 relative z-10">
+        <h1 className="text-[100px] font-extralight tracking-[0.3em] mb-6" style={{ fontFamily: 'Didot, serif', letterSpacing: '0.15em' }}>
+          NJS
+        </h1>
+        <nav className="flex space-x-10 text-lg uppercase tracking-wide">
+          <a href="#about" className="hover:text-gray-400 transition">About</a>
+          <a href="#work" className="hover:text-gray-400 transition">Work</a>
+          <a href="#contact" className="hover:text-gray-400 transition">Contact</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="flex flex-col items-center text-center px-6 mt-10 relative z-10">
+        <h2 className="text-4xl md:text-6xl font-light mb-8 italic bg-clip-text text-transparent bg-gradient-to-r from-gray-200 via-gray-400 to-gray-200 leading-[1.4] pb-6">
+          Growing. Creating. Leading.
+        </h2>
+        <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mb-10">
+          I’m Nicholas St. George Jr., a business owner and entrepreneur focused on creating growth and lasting value. 
+          This space is more than a resume – it’s a personal introduction, showcasing my ventures, experience, and vision for the future.
+        </p>
+        <a 
+          href="#work" 
+          className="px-10 py-3 border border-gray-400 rounded-full hover:bg-gray-800 transition text-sm tracking-widest uppercase shadow-lg hover:shadow-gray-700/40"
+        >
+          Explore My Work
+        </a>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-28 px-8 max-w-5xl mx-auto relative z-10">
+        <h3 className="text-4xl mb-10 font-light border-b border-gray-700 inline-block pb-2">About Me</h3>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <p className="text-gray-300 leading-relaxed">
+              I’m a dedicated entrepreneur currently pursuing a B.S. in Business Management at the University of South Florida. 
+              My passion lies in merging business strategy with technology, particularly in social media marketing and AI-driven tools. 
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              From building my own business, NJS – Freelance Social Media Management & Marketing, to gaining hands-on experience 
+              as a summer intern and working in high-pressure hospitality environments, I’ve cultivated skills in leadership, communication, 
+              and adaptability. My aim is to bring innovation and value to every venture I pursue.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <img 
+              src="/images/nicholas-profile.jpg" 
+              alt="Nicholas St. George Jr." 
+              className="rounded-2xl shadow-lg w-[360px] h-[480px] object-cover hover:scale-105 transition-transform duration-500"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Work Section */}
+      <section id="work" className="py-28 px-8 bg-gray-950 bg-opacity-80 relative z-10">
+        <h3 className="text-4xl mb-12 font-light text-center border-b border-gray-700 inline-block pb-2">Professional Experience</h3>
+        <div className="space-y-12 max-w-6xl mx-auto">
+          {[{
+            title: "Owner | Social Media Manager & Marketer",
+            company: "NJS – Freelance Social Media Management & Marketing | June ’25 – Present",
+            bullets: [
+              "Founded and grew a sole proprietorship by independently sourcing and securing clients.",
+              "Delivered social media management services using AI tools to increase reach, drive sales, and enhance brand presence.",
+              "Strengthened expertise in emerging technologies and content strategies."
+            ]
+          }, {
+            title: "Server Assistant",
+            company: "Boca, Lake Mary | June – August ’25",
+            bullets: [
+              "Coordinated between kitchen and servers to ensure timely, accurate service in a high-volume environment.",
+              "Developed teamwork and organizational skills under pressure."
+            ]
+          }, {
+            title: "Summer Intern – Product Data Management & AI Technical Tools",
+            company: "Thompson, Greensborough, NC | May – August ’25",
+            bullets: [
+              "Created and completed 150+ detailed product specification sheets for luxury kitchen and bath products.",
+              "Developed and trained an AI tool to generate technical drawings, streamlining processes.",
+              "Applied strong project management and problem-solving skills across in-person and remote work."
+            ]
+          }].map((job, idx) => (
+            <div key={idx} className="p-6 border border-gray-700 rounded-xl bg-black/30 hover:scale-[1.02] transition-transform duration-500">
+              <h4 className="text-2xl font-light">{job.title}</h4>
+              <p className="text-gray-400 italic mb-4">{job.company}</p>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                {job.bullets.map((b, i) => (
+                  <li key={i}>{b}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-28 px-8 max-w-4xl mx-auto text-center relative z-10">
+        <h3 className="text-4xl mb-8 font-light">Let’s Connect</h3>
+        <p className="text-gray-300 mb-8">
+          Interested in working together or learning more? Reach out through any of the platforms below:
+        </p>
+        <div className="flex justify-center space-x-10 text-lg">
+          <a href="mailto:stgeorgenicholas2@gmail.com" className="hover:text-gray-400 transition">Email</a>
+          <a href="tel:+14077174437" className="hover:text-gray-400 transition">Phone</a>
+          <a href="https://linkedin.com/in/njstgeorge" target="_blank" className="hover:text-gray-400 transition">LinkedIn</a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-6 text-gray-500 text-sm text-center relative z-10 border-t border-gray-800">
+        © {new Date().getFullYear()} NJS. All rights reserved.
       </footer>
     </div>
   );
