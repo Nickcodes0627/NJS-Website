@@ -48,7 +48,7 @@ export default function HomePage() {
               My passion lies in merging business strategy with technology, particularly in social media marketing and AI-driven tools. 
             </p>
             <p className="text-gray-300 leading-relaxed">
-              From building my own business, NJS – Freelance Social Media Management & Marketing, to gaining hands-on experience 
+              From building my own business, NJS, to gaining hands-on experience 
               as a summer intern and working in high-pressure hospitality environments, I’ve cultivated skills in leadership, communication, 
               and adaptability. My aim is to bring innovation and value to every venture I pursue.
             </p>
