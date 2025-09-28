@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NJS Portfolio",
   description: "Personal portfolio of Nicholas St. George Jr.",
-  icons: {
-    icon: "/favicon.ico",
-  },
+icons: {
+  icon: "/favicon-v2.ico",
+},
 };
 
 export default function RootLayout({
