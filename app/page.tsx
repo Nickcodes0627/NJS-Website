@@ -123,11 +123,12 @@ export default function HomePage() {
               "Strengthened expertise in emerging technologies and content strategies."
             ]
           }, {
-            title: "Server Assistant",
-            company: "Boca, Lake Mary | June – August ’25",
+            title: "Sales & Marketing Manager | Amazon E-Commerce",
+            company: "Thompson | Oct '25 – Present",
             bullets: [
-              "Coordinated between kitchen and servers to ensure timely, accurate service in a high-volume environment.",
-              "Developed teamwork and organizational skills under pressure."
+              "Manage and optimized Thompson Traders’ Amazon FBM Seller Central storefront to drive sales growth and visibility.",
+              "Developing and executing marketing strategies, including product listings, SEO, and promotional campaigns.",
+              "Analyzed sales data and performance metrics to identify trends and opportunities for improvement."
             ]
           }, {
             title: "Summer Intern – Product Data Management & AI Technical Tools",
