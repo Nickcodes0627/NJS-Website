@@ -68,8 +68,7 @@ export default function HomePage() {
           transition={{ duration: 1.5 }}
           className="text-lg text-gray-300 leading-relaxed max-w-3xl mb-10"
         >
-          I’m Nicholas St. George Jr., a business owner and entrepreneur focused on creating growth and lasting value. 
-          This space is more than a resume – it’s a personal introduction, showcasing my ventures, experience, and vision for the future.
+          I’m Nicholas St. George Jr., a business owner focused on building lasting growth. This is not just a resume. It’s a brief look at my work, ventures, and long-term vision.
         </motion.p>
         <motion.a
           whileHover={{ scale: 1.05 }}
@@ -91,9 +90,7 @@ export default function HomePage() {
               My passion lies in merging business strategy with technology, particularly in social media marketing and AI-driven tools. 
             </p>
             <p className="text-gray-300 leading-relaxed">
-              From building my own business, NJS, to gaining hands-on experience 
-              as a summer intern and working in high-pressure hospitality environments, I’ve cultivated skills in leadership, communication, 
-              and adaptability. My aim is to bring innovation and value to every venture I pursue.
+              I am an entrepreneur pursuing a B.S. in Business Management at the University of South Florida. My focus is on business strategy, e-commerce growth, and modern marketing systems. I lead sales and marketing initiatives for the Amazon e-commerce division of Thompson Traders, where I manage storefront growth, paid campaigns, and listing performance. I also founded NJS, a marketing and growth firm supporting select brands.
             </p>
           </div>
           <div className="flex justify-center">
